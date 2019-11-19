@@ -9,26 +9,47 @@
     <body>
 <!--HEADER SECTION-->
       <header>
-        <div id="top-wrapper">
           <div id="navbar">
-            <a href="#">Gmail</a>
-            <a href="#">Images</a>
-            <a href="#"><img src="../google-homepage/src/images/google_apps.png" width="27" height="27">
+            <a href="#" class="header-link">Gmail</a>
+            <a href="#" class="header-link">Images</a>
+            <a href="#"><img class="header icon gapp" src="../google-homepage/src/images/google_apps.png" width="27" height="27">
             </a>
-            <a href="#"><img src="../google-homepage/src/images/profilepic.png" width="43" height="39"> 
+            <a href="#"><img class="header icon profilepic" src="../google-homepage/src/images/profilepic.png" width="43" height="39"> 
             </a> 
-  </div>
-</div>
-        </header>
-
-        
-<!--SEARCH RESULTS SECTION-->
+          </div>
+      </header>
+<!--SEARCH SECTION W LOGO-->        
         <main>
-
+          <div id="logo" class="main-wrapper">
+            <img src="../google-homepage/src/images/google_logo.png" alt="A google logo">
+          </div>
+          <form action="#" method="GET" class="main-wrapper" id="searchbox-wrapper">
+            <input type="text">
+            <input type="submit" value="Google Search" class="button">
+            <input type="submit" value="I'm Feeling Lucky" class="button">
+          </form>
+          <div class="main-wrapper" id="searchbox-footer">
+              <p>Google offered in: <a href="#">English (United Kingdom)</a></p>
+          </div>
         </main>
  <!--FOOTER SECTION-->
         <footer>
-
+          <div id="country" class="footer-wrapper">
+              <p>Argentina</p>
+          </div>
+          <div class="footer-wrapper" id="footer-links">
+              <div class="footer link left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search Works</a>
+              </div>
+              <div class="footer link right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+              </div>
+          </div>
         </footer>
     </body>
 </html>

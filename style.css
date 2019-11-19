@@ -1,0 +1,49 @@
+* {
+    -webkit-appearance: none;
+    font-family: Roboto, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 15px;
+}
+.header-link {
+    font-size: 13px;
+    color: #292727;
+    position: relative;
+    bottom: 10px;
+    padding: 8px;
+}
+.header.icon {
+    position: relative;
+    bottom: 2px;
+}
+.header.profilepic {
+    position: relative;
+    top: 4px;
+}
+.header.gapp {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    padding: 15px;
+}
+#searchbox-wrapper {
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+.footer-wrapper {
+    display: flexbox;
+    justify-content: flex-end;
+    position: relative;
+    top: 600px;
+}
