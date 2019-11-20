@@ -7,14 +7,15 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     </head>
     <body>
+      <div id="pagewrapper">
 <!--HEADER SECTION-->
       <header>
           <div id="navbar">
             <a href="#" class="header-link">Gmail</a>
             <a href="#" class="header-link">Images</a>
-            <a href="#"><img class="header icon gapp" src="../google-homepage/src/images/google_apps.png" width="27" height="27">
+            <a href="#" class="header icon"><img class="header icon gapp" src="../google-homepage/src/images/google_apps.png" width="37" height="27">
             </a>
-            <a href="#"><img class="header icon profilepic" src="../google-homepage/src/images/profilepic.png" width="43" height="39"> 
+            <a href="#" class="header icon"><img class="header icon profilepic" src="../google-homepage/src/images/profilepic.png" width="43" height="39"> 
             </a> 
           </div>
       </header>
@@ -23,13 +24,25 @@
           <div id="logo" class="main-wrapper">
             <img src="../google-homepage/src/images/google_logo.png" alt="A google logo">
           </div>
-          <form action="#" method="GET" class="main-wrapper" id="searchbox-wrapper">
-            <input type="text">
-            <input type="submit" value="Google Search" class="button">
-            <input type="submit" value="I'm Feeling Lucky" class="button">
-          </form>
-          <div class="main-wrapper" id="searchbox-footer">
-              <p>Google offered in: <a href="#">English (United Kingdom)</a></p>
+          <div id="searchArea">
+            <form action="#" method="GET" id="searchbox-wrapper" onsubmit="search(); return false">
+            <div id="fullsearchbar" class="searchbar">
+              <div id="magnifyingSearchIcon" class="searchbarIcon">
+                <img src="../google-homepage/src/images/magnifyinglassicon.png" height="20px" width="20px">
+              </div>
+              <input class="searchbar" type="text" size="75px">
+              <div class="searchbarIcon" id="voicesearchIcon">
+                <a href="#"><img src="../google-homepage/src/images/voicesearchIcon.png" height="20px" width="15px"></a>
+              </div>
+            </div>
+            <div id="buttons-wrapper">
+            <a href="#"><input type="button" value="Google Search" class="button" onclick="search()"></a>
+            <a href="#"><input type="button" value="I'm Feeling Lucky" class="button" onclick="search ('&btnI=I%27m+Feeling+Lucky')"></a>
+            </div>
+            </form>
+          </div>
+          <div class="main-wrapper">
+              <p  id="searchbarFooter">Google offered in: <a href="#">English (United Kingdom)</a></p>
           </div>
         </main>
  <!--FOOTER SECTION-->
@@ -37,19 +50,34 @@
           <div id="country" class="footer-wrapper">
               <p>Argentina</p>
           </div>
-          <div class="footer-wrapper" id="footer-links">
-              <div class="footer link left">
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">About</a>
-                <a href="#">How Search Works</a>
-              </div>
-              <div class="footer link right">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-              </div>
-          </div>
+          <div id="footer-links">
+              <ul id="leftFooterLinks" class="footerLink">
+                <li>
+                  <a class="footerLink" href="#">Advertising</a>
+                </li>
+                <li>
+                  <a class="footerLink" href="#">Business</a>
+                </li>
+                <li>
+                  <a class="footerLink" href="#">About</a>
+                </li>
+                <li>
+                  <a class="footerLink" href="#">How Search Works</a>
+                </li>
+              </ul>
+              <ul id="rightFooterLinks" class="footerLink">
+                <li>
+                  <a class="footerLink" href="#">Privacy</a>
+                </li>
+                <li>
+                  <a class="footerLink" href="#">Terms</a>
+                </li>
+                <li>
+                  <a class="footerLink" href="#">Settings</a>
+                </li>
+              </ul>
+            </div>
         </footer>
+      </div>
     </body>
 </html>
