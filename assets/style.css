@@ -160,6 +160,7 @@ a.footerLink:hover {
 #fullsearchbar:focus-within {
     box-shadow: 0 1px 5px #dddd;
 }
+
 #buttons-wrapper {
     display: flex;
     justify-content: center;
