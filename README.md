@@ -1,3 +1,5 @@
+### [Live Version](https://randrerd.github.io/google-homepage/) <br>
+
 ---------THIS IS A PROJECT MADE FOR THE ODIN PROJECT COURSEWORK----
 
 
